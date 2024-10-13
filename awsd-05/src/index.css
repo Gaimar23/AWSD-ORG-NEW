@@ -1,0 +1,22 @@
+* {
+  scroll-behavior: smooth;
+}
+
+/* body {
+  overflow-x: hidden;
+} */
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* @media only screen and (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+} */

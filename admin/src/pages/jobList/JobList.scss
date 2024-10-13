@@ -1,0 +1,57 @@
+.job-list {
+  // styling for fixed position
+  margin-top: 109px;
+  margin-left: 18%;
+  //
+
+  width: 75%;
+  padding-left: 50px;
+  padding-top: 50px;
+
+  .list-table {
+    height: calc(100vh - 220px);
+    overflow-y: scroll;
+    scrollbar-color: black;
+
+    .list-table-format {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 15px;
+      border: 1px solid #cacaca;
+      font-size: 13px;
+
+      &.title {
+        background-color: green;
+        border: 2px solid green;
+        // background-color: black;
+        // border: 2px solid black;
+        border-radius: 8px 8px 0 0;
+        b {
+          font-size: 17px;
+          color: white;
+          user-select: none;
+        }
+      }
+
+      img {
+        width: 80px;
+        height: 80px;
+        border-radius: 15px;
+        background-color: #a9a9a9;
+        padding: 2px;
+      }
+
+      .action-icon {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+
+      //   .cursor {
+      //     cursor: pointer;
+      //   }
+    }
+  }
+}

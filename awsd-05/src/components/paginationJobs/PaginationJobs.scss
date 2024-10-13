@@ -1,0 +1,42 @@
+.pagination-jobs{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+
+    .page-count{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .number{
+            padding: 3px;
+            font-size: 15px;
+            font-weight: 600;
+            color: green;
+            border-radius: 5px;
+            cursor: pointer;
+            min-width: 2rem;
+            box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.384);
+            text-align: center;
+
+            &.active{
+                background-color: green;
+                color: white;
+            }
+        }
+
+        .prev,.next{
+            padding: 3px;
+            font-size: 15px;
+            font-weight: 600;
+            color: green;
+            border-radius: 5px;
+            cursor: pointer;
+            min-width: 2rem;
+            box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.384);
+            text-align: center;
+        }
+
+    }
+
+}

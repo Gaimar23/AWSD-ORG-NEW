@@ -1,0 +1,290 @@
+.footer{
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+    .footerContainer{
+        max-width: 1366px;
+        width: 100%;
+
+        .mainFooter{
+            background-color: rgb(255, 255, 255);
+            height: 100%;
+            z-index: 1;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+
+            .top{
+                display: flex;
+                align-items: start;
+                gap: 80px;
+                justify-content: center;
+                padding: 50px 0 20px 0;
+
+                // 
+                background: url("../../assets/images/background/background01.jpg");
+                background-repeat: no-repeat;
+                background-position: left top;
+                background-attachment: scroll;
+                background-size: cover;
+
+
+                .first{
+                    width: 255px;
+                    text-align: center;
+                    .logoContainer{
+
+                        .logo{
+                            width: 250px;
+                            height: 200px;
+                            // background-color: white;
+                        }
+                    }
+
+                    .social{
+                        display: flex;
+                        flex-flow: column;
+                        align-items: center;
+                        gap: 10px;
+
+                        .slogan{
+                            color: rgb(151, 149, 149);
+                        }
+
+                        // .iconContainer{
+                        //     display: flex;
+                        //     gap: 10px;
+
+                        //     .icons{
+                        //         background-color: white;
+                        //         width: 30px;
+                        //         height: 30px;
+                                 
+                        //         display: flex;
+                        //         align-items: center;
+                        //         justify-content: center;
+                        //         border-radius: 3px;
+
+                        //         .icon{
+                        //             font-size: 22px;
+                        //             color: green;
+                        //         }
+                        //     }
+                        // }
+                    }
+                }
+
+                .second{
+                    width: 255px;
+
+
+                    .title{
+                        color: black;
+                    }
+
+                    .liens{
+                        padding-top: 30px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .lien{
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+
+                            .desc01{
+                                text-decoration: none;
+                                color: black;
+                                transition: all 0.3s ease;
+
+                                &:hover{
+                                    color: green;
+                                }
+                            }
+
+                            .point{
+                                width: 7px;
+                                height: 7px;
+                                background-color: green;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                }
+
+                .third{
+                    width: 255px;
+
+                    .title{
+                        color: black;
+                    }
+
+                    .liens{
+                        padding-top: 30px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .lien{
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+
+                            .desc01{
+                                color: black;
+                            }
+
+                            .point{
+                                width: 7px;
+                                height: 7px;
+                                background-color: green;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+
+                }
+
+                .four{
+                    width: 255px;
+
+                    .title{
+                        color: black;
+                    }
+                    
+                    .liens{
+                        padding-top: 30px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .lien{
+                            display: flex;
+                            align-items: center;
+                            gap: 7px;
+
+                            .iconContact{
+                                font-size: 18px;
+                                color: green;
+                            }
+                        }
+
+                    }
+
+                }
+            }
+
+            .bottom{
+                padding: 15px 0;
+                // text-align: center;
+                border-top: 1px solid rgba(216, 213, 213, 0.466);
+                // background-color: rgba(43, 197, 23, 0.692);
+                background-color: black;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
+                .iconContainer{
+                    display: flex;
+                    gap: 10px;
+
+                    .icons{
+                        background-color: white;
+                        width: 30px;
+                        height: 30px;
+                        cursor: pointer;
+                         
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 3px;
+                        overflow: hidden;
+
+                        // &:hover{
+                        //     background-color: green;
+                            
+                        // }
+
+                        .icon{
+                            font-size: 22px;
+                            color: black;
+                            padding: 7px;
+                            width: 100%;
+                            height: 100%;
+                            transition: all 0.6s ease;
+
+                            &:hover{
+                                background-color: green;
+                                color: white;
+                            }
+    
+
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 480px){
+    .footer{
+
+        .footerContainer{
+
+            .mainFooter{
+
+                .top{
+
+                    // flex-wrap: wrap;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 40px;
+                    padding-bottom: 40px;
+                }
+
+                .bottom{
+
+                    flex-flow: column-reverse;
+                    gap: 13px;
+
+                    .copyright{
+
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 370px){
+    .footer{
+
+        .footerContainer{
+
+            .mainFooter{
+
+                .bottom{
+
+                    .copyright{
+
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+}
